@@ -1,0 +1,48 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ciara Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Ciara Studio">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+
+  <!-- Splash Screen -->
+  <div id="splash-screen" class="screen center">
+    <img src="logo.png" alt="Ciara Studio Logo" class="logo" />
+  </div>
+
+  <!-- Appointments Page -->
+  <div id="appointments-page" class="hidden">
+    <div class="heading">
+      <h1>Ciara Studio</h1>
+    </div>
+
+    <div class="appointment">
+      <h2>Appointments</h2>
+    </div>
+    <div id="appointment-filters" class="flex">
+      <div class="active-indicator"></div>
+
+      <button class="active" onclick="filterAppointments('pending')">Pending</button>
+      <button onclick="filterAppointments('completed')">Completed</button>
+      <button onclick="filterAppointments('cancelled')">Cancelled</button>
+      <button onclick="filterAppointments('all')">All</button>
+    </div> <br>
+    <span id="counts" class="count"></span>
+    <div id="appointments-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
