@@ -1,7 +1,7 @@
 {
     "name":"Ciara Studio",
     "short_name":"Ciara",
-    "start_url":"./index.html",
+    "start_url":"./",
     "display":"standalone",
     "background_color":"#fff0f5",
     "theme_color":"#ffc0cb",
